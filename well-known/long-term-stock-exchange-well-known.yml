@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://ltse.com/.well-known/*
+host: https://ltse.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+note: >-
+  LTSE publishes no /.well-known/ discovery surface. It is a U.S. national
+  securities exchange whose participant integration is via FIX/SBE order-entry
+  and the MEMOIR multicast market-data feed, not a web API — no OAuth/OIDC
+  discovery, API catalog, or AI plugin manifest is expected or present.
