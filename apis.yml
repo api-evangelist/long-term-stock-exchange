@@ -1,8 +1,15 @@
 aid: long-term-stock-exchange
 name: Long-Term Stock Exchange
-description: Long-Term Stock Exchange is a company surfaced as a portfolio company of 500-global, obvious-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  The Long-Term Stock Exchange (LTSE) is a U.S. Securities and Exchange Commission-registered
+  national securities exchange headquartered in New York, built to support companies and investors
+  committed to long-term value creation. LTSE operates a principles-based equities trading platform
+  that accepts order entry over the MEMO FIX and MEMO SBE (Simple Binary Encoding) protocols and
+  distributes real-time market data - depth of book, top of book, and last sale - via the MEMOIR
+  multicast feed. Beyond the exchange it offers private-markets and cap-table software plus long-term
+  listing standards. LTSE does not publish a public REST/OpenAPI developer API; participant
+  connectivity (Direct, Extranet, Telco via NY4) and technical specifications are provided through
+  its Market Operations team.
 url: https://raw.githubusercontent.com/api-evangelist/long-term-stock-exchange/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +18,30 @@ x-backed-by:
 - obvious-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://cdn.prod.website-files.com/6462417e8db99f8baa069524/646243a7917deda53e272fee_LTSE%20Desktop.svg
 tags:
 - Company
+- Stock Exchange
+- Capital Markets
+- Financial Services
+- Market Data
+- Trading
+- Securities
+- FIX Protocol
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,25 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/long-term-stock-exchange-domain-security.yml
 - type: Website
   url: https://ltse.com
+- type: Documentation
+  url: https://ltse.com/trading/user-guide-technical-specifications
+- type: Support
+  url: https://ltse.com/contact
+- type: Blog
+  url: https://ltse.com/insights
+- type: Pricing
+  url: https://ltse.com/trading/fees-and-incentives
+- type: TermsOfService
+  url: https://ltse.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://ltse.com/privacy
+
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
